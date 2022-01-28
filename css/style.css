@@ -1,0 +1,1201 @@
+/* Skapad av Tilda Källström 2021 */
+
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+/* Noto Sans JP, weight 300, 400, 500 */
+/* bakgrundsfärg och mjuk scroll*/
+html {
+    background-color: #e6f0e6;
+        scroll-behavior: smooth;
+}
+/*centrering av body*/
+body {
+    background-color: white;
+    max-width: 1500px;
+    margin: auto; 
+}
+.centering {
+    max-width: 450px;
+    margin: auto;
+}
+
+.bigli {
+    margin-top: 2em;
+}
+.bigblacklink {
+        font-family: 'Noto Sans JP', Sans-serif;
+         font-size: 1.35em;
+         text-decoration: underline;
+         color: black;
+         margin-left: 20px;
+         line-height: 1.8em;
+         margin-top: 2em;
+}
+.littleblacklink {
+    font-family: 'Noto Sans JP', Sans-serif;
+         font-size: 1.2em;
+         text-decoration: underline;
+         color: black;
+         margin-left: 40px;
+         line-height: 1.8em;
+         
+}
+/* rubriker */
+h2, h3, h4, h5 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    
+}
+.centerh3 {
+    margin-top: 2em;
+}
+/*brödtext*/
+.centerp {
+    margin-right: 1em;
+    max-width: 70%;
+}
+.centerpp {
+    margin-right: 2em;
+    max-width: 85%;
+    margin-left: -1em;
+}
+/*länkar*/
+.link {
+    color: black;
+    margin-left: -2em;
+}
+.links {
+    color: black;
+}
+/*ingen styling på listor*/
+li {
+    list-style-type: none;
+    font-family: "Noto Sans JP", sans-serif;
+}
+/*bakgrundsfärg översta heading*/
+.headertop {
+    background-color: #131f16;
+}
+
+/* menystyling */
+.navbar {
+    background-color:#337B59;
+    margin-bottom: -1em;
+}
+.meny {
+    display: inline;
+   font-size: 1.4em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-left: 1em;
+   padding-right: 1em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+.menyhere {
+    display: inline;
+   text-decoration: underline;
+   font-size: 1.4em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: #253C2A;
+}
+.minasidor {
+    background-color:#337B59;
+    color: white;
+    width: 100%;
+    font-size: 1.4em;
+    text-decoration: underline;
+    border: none;
+    padding-top: 0.5em;
+    border-top: 0.5px solid lightgray;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+   font-family: "Noto Sans JP", sans-serif;
+}
+.minasidor1 {
+    background-color: #253C2A;
+    color: white;
+    width: 100%;
+    font-size: 1.4em;
+    text-decoration: underline;
+    border: none;
+    padding-top: 0.5em;
+    border-top: 0.5px solid lightgray;
+    padding-bottom: 0.5em;
+    cursor: pointer;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/*visar vart användaren är*/
+.breadcrumbs {
+    margin-top: 0.5em;
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-left: 0.5em;
+    color: blacK;
+}
+.breadcrumbs a{
+    color: black;
+}
+/*centrering*/
+.center {
+    width: 90%;
+    max-width: 280px;
+    margin: auto;
+    margin-bottom: -1em;
+    
+   margin-top: 2em;
+}
+/*loggor*/
+.smalla {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 300;
+}
+.small-logo {
+    max-width: 25px;
+    padding-top: 0.5em;
+}
+header {
+    padding: 0;
+    top: 0;
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0px 3px 5px #888;
+}
+/* sökknapp header*/
+.search {
+    background-color: black;
+    color: white;
+    padding: 0.8em;
+    padding-top: 1em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    margin-top: 1em;
+    max-width: 300px;
+}
+.search:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    cursor: pointer;
+}
+/* formulär */
+div {
+    margin-bottom: 0.8em;
+}
+form, .form {
+    margin: auto;
+    max-width: 400px;
+}
+.contactform {
+    margin: auto;
+    max-width: 300px;
+}
+.searchform {
+    max-width: 200px;
+}
+.searchformform {
+    width: 100%;
+}
+/* länk till mina sidor*/
+.movediv {
+    max-width: 200px;
+    padding-bottom: 2em;
+    margin: auto;
+}
+.move {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.menyhere a {
+    color: white;
+}
+.meny a {
+    color: white;
+    text-decoration: none;
+}
+.meny a:hover {
+    text-decoration: underline;
+}
+fieldset {
+    border: none;
+}
+p {
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.5em;
+    max-width: 35ch;
+}
+legend {
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.5em; 
+}
+/*text*/
+.person {
+    margin: auto;
+    margin-bottom: 1em;
+}
+.person1 {
+    margin: auto;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+/*länkar*/
+.centerlink {
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 1em;
+}
+.frontlink {
+    background-color: #337B59;
+    color: white;
+    width: 100%;
+    padding-bottom: 0.4em;
+    font-size: 1.3em;
+    text-align: center;
+    display: block;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400;
+    margin-bottom: 3em;
+    text-decoration: none;
+}
+.frontlink:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+/* intro på index */
+.intro {
+    margin: auto;
+    max-width: 700px;
+    margin-bottom: 4em;
+}
+/*rubriker*/
+h2 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-size: 1.8em;
+    font-weight: 400; 
+    margin-left: 1em;
+    margin-right: 1em;
+  
+}
+.loginh2 {
+    text-align: center;
+    font-size: 1.4em;
+}
+h3 {
+    font-size: 1.4em;
+}
+.introp {
+    margin-top: -0.5em;
+    text-align: center;
+}
+.pminasidor {
+    margin-left: -0.1em;
+    margin-top: -1em;
+}
+.loginh3 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400; 
+    text-align: center;
+    margin: 20px;
+}
+/* styling för knapp*/
+.loginbutton, .loginbutton1 {
+    background-color: #337B59;
+    border: 2px solid #337B59;
+    color: white;
+    margin: auto;
+    display: block;
+    padding: 1em;
+    width: 300px;
+    border-radius: 50px;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400; 
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border: white;
+}
+.loginbutton:hover {
+    background-color:#3e916a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.loginbutton1:hover {
+    background-color:#3e916a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+label {
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-top: 1em;
+}
+/*inmatningsfält*/
+input[type=text]:focus {
+    background-color: white;
+    border: 1px solid gray;
+  }
+input[type=text], input[type=email], input[type=date], input[type=time], select, textarea, input [type=number] {
+    max-width: 300px; 
+    padding: 12px; 
+    box-sizing: border-box; 
+    resize: vertical;
+    border: solid 1px;
+    box-shadow: 2px 2px 2px lightgray;
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin: auto;
+  }
+  input[type=number] {
+    padding: 8px; 
+    max-width: 150px;
+  }
+  /* submitknapp */
+  input[type=submit], .sent {
+    background-color: #003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    padding: 12px 20px;
+    margin-bottom: 1em;
+    max-width: 400px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  input[type=submit]:hover {
+    background-color: #060538;
+  }
+  .sent:hover {
+    background-color: #060538;
+    text-decoration: underline;
+  }
+/*knappar på informationssida*/
+#myBtn, #myBtnone, #myBtntwo, #myBtnthree, #myBtnfour, #myBtnfive {
+    background-color: #337B59;
+    color: white;
+    border-radius: 50px;
+    padding: 5px;
+    padding-right: 7px;
+    border: solid 2px white;
+    font-size: 0.9em;
+   float: right;
+}
+.readMore {
+        font-family: "Noto Sans JP", sans-serif;
+        max-width: 400px;
+        width: 100%;
+       padding: 1em;
+        background-color: lightgray;
+        color: black;
+        border: solid 1px;
+        border-radius: 5px;
+        font-size: 1.2em;
+        text-align: left;
+        margin-top: 0.5em;
+        margin-left: -1em; 
+    }
+.readMore:hover {
+    background-color: #D7F0DE;
+    cursor: pointer;
+}
+.textExpand {
+    max-width: 690px;
+    margin: 1% auto;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    display: none;
+}
+  
+/*resabokad-sida*/
+.contactarticle {
+    max-width: 450px;
+    margin: auto;
+    border: 1px solid;
+    margin-bottom: 1em;
+    box-shadow: 5px 2px 2px lightgray;
+}
+.pcenter {
+    text-align: center;
+}
+input[type=number]  {
+    font-size: 1.4em;
+    margin-top: 1em;
+  }
+/* styling för riktigt små skärmar */
+@media only screen and (max-width: 382px) {
+    .navbar {
+        max-width: 100%;
+    }
+    .menyul {
+        display: flex;
+        padding-left: 2em;
+       padding-right: 0;
+    }
+    .menyul a {
+        font-size: 0.9em; 
+    }
+    .menyhere a {
+        font-size: 0.9em; 
+    }
+    .menyul li a {
+        font-size: 0.9em; 
+    }
+    .meny {
+        font-size: 0.8em;
+        display: inline;
+       margin-left: -1em;
+       margin-right: -0.7em;
+       font-family: 'Noto Sans JP', Sans-serif;
+       font-weight: 400;
+       margin-top: 1em;
+       margin-bottom: 1em;
+    }
+    .menyhere {
+        display: inline;
+       text-decoration: underline;
+       margin-left: -1em;
+       margin-right: -0.7em;
+       font-family: 'Noto Sans JP', Sans-serif;
+       font-weight: 400;
+       padding-top: 1em;
+       background-color: #253C2A;
+    }
+    .leftform, .rightform, .leftform1, .rightform1 {
+        width: 85%;
+        max-width: 300px;
+      margin-bottom: 1em;
+     }
+     label {
+    max-width: 150px;
+}
+     input [type=text], input [type=number] {
+        margin-bottom: 1em;
+        margin-top: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        max-width: 200px;
+    }
+  
+    }
+    /* styling för små skärmar */
+@media only screen and (max-width: 460px) {
+    .navbar {
+        max-width: 100%;
+    }
+    .menyul {
+       margin-left: -2.4em;
+        display: flex;
+    }
+    #expander {
+        margin-right: 2em;  
+    }
+    .meny {
+        display: inline;
+       margin-left: -0.6em;
+       margin-right: -0.4em;
+       font-family: 'Noto Sans JP', Sans-serif;
+       font-weight: 400;
+       margin-top: 1em;
+       margin-bottom: 1em;
+    }
+    .menyhere {
+        display: inline;
+       text-decoration: underline;
+       margin-left: -0.6em;
+       margin-right: -0.4em;
+       font-family: 'Noto Sans JP', Sans-serif;
+       font-weight: 400;
+       padding-top: 1em;
+       background-color: #253C2A;
+    }
+    .centerh3 {
+        text-align: left;
+        }
+/* bilder med länkar på index */
+.imgfront {
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+}
+    }
+    @media only screen and (min-width: 460px) and (max-width: 900px) {
+        .centerh3 {
+            text-align: center;
+            }
+    }
+    /* styling för ganska små skärmar */
+@media only screen and (max-width: 600px) {
+    .logo {
+        max-width: 250px;
+        display: block;
+       margin: auto;
+    }
+    .menyul {
+    display: flex;
+  justify-content: center;
+}
+.menyul {
+    display: flex;
+  justify-content: center;
+}
+.meny a {
+    font-size: 1em;
+}
+.meny {
+    display: inline;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-left: 0.7em;
+   padding-right: 0.7em;
+   margin-top: 1em;
+   margin-left: -0.4em;
+   margin-bottom: 1em;
+}
+.menyhere {
+    display: inline;
+   text-decoration: underline;
+   margin-left: -0.4em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-top: 1em;
+   padding-left: 0.7em;
+   padding-right: 0.7em;
+   background-color: #253C2A;
+}
+/* bilder med länkar på index */
+.column {
+    max-width: 350px;
+    margin: auto; 
+}
+.imgfront {
+    max-width: 350px;
+    margin: auto;
+}
+}
+@media only screen and (min-width: 370px) and (max-width: 1000px) {
+    /*grids blir inga grids på mindre skärmar*/
+    .leftform, .rightform, .leftform1, .rightform1 {
+        width: 90%;
+        max-width: 300px;
+      margin-right: 1em;
+      margin-left: -1em;
+      margin: auto;
+      font-size: 1.1em;
+      margin-top: 1em;
+     }
+.return {
+    margin-top: -2em;
+    margin-left: -2em;
+}
+.down {
+    margin-left: -2em;
+    margin-top: 2em;
+}
+.time {
+    margin-top: 1.8em;
+    margin-bottom: 2em;
+}
+.trip {
+    padding-top: 1em;
+    margin-left: 1em;
+}
+}
+/* styling för små till medelstora skärmar */
+@media only screen and (max-width: 900px) {
+    .headergrid {
+        width: 100%;
+        margin-top: 1em;
+    }
+    .infoheader {
+        width: 100%;
+    }
+    .logo {
+        max-width: 300px;
+        display: block;
+       margin: auto;
+    }
+    body {
+        max-width: 100%;
+    }
+.menyul {
+    display: flex;
+  justify-content: center;
+}
+.meny {
+    display: inline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-left: 1em;
+   padding-right: 1em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+.menyhere {
+    display: inline;
+   text-decoration: underline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: #253C2A;
+}
+    .header1 {
+       margin: auto;
+      max-width: 310px;
+       }
+       .right {
+          display: none;
+      }
+      /* loggor högst upp */
+      .smalla1 {
+        color: white;
+        text-decoration: none;
+        font-family: 'Noto Sans JP', Sans-serif;
+        font-weight: 300;
+       padding: 1em;
+    }
+  .frontpageh1 {
+    text-align: center;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+  }
+  .h1h1 {
+    text-align: center;
+    font-family: 'Noto Sans JP', Sans-serif; 
+    font-size: 1.8em;
+  }
+
+ /* styling på boka resa sida */
+ /* kolumner*/
+ .columnbooking {
+    width: 100%;
+    margin: auto;
+}
+legend {
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+/* rubriker med grön bakgrund*/
+.greenh2 {
+   background-color: #D7F0DE;
+   text-align: center;
+   padding: 0.5em;
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0;
+   border-bottom: solid 1px;
+}
+.greenlegend {
+    background-color: #D7F0DE;
+    text-align: center;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+    margin-top: 0;
+   max-width: 98%;
+  margin: auto;
+    border-bottom: solid 1px;
+    font-weight: bold;
+}
+/* articlar i columns */
+.leftarticle, .rightarticle {
+   border: solid 1px;
+   box-shadow: 5px 2px 2px lightgray;
+   padding: 0;
+   margin: auto;
+   max-width: 500px;
+   margin-bottom: 1em;
+}
+.bookingh3 {
+   margin-left: 0.8em;
+   margin-bottom: -0.5em;
+}
+.bookingh3right {
+   margin-left: 2em;
+   margin-bottom: -0.5em;
+   margin-top: -1em;
+}
+.contactlogo {
+    max-width: 25px;
+    margin-bottom: -1em;
+    padding: 0.5em;
+}
+.move {
+    padding: 1em;
+}
+.loginbutton {
+       max-width: 80%; 
+       margin: auto;
+       margin-bottom: 1em;
+}
+.loginbutton1 {
+    max-width: 80%; 
+    margin: auto;
+
+}
+/* faq länk på infosida */
+.faq {
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.1em;   
+}
+.faqdiv {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+}
+/*inmatningsfält*/
+input[type=text], input[type=email], select, textarea {
+    max-width: 250px; 
+    width: 90%;
+    margin: auto;
+  }
+  /* submitknapp för formulär */
+  input[type=submit], .sent {
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+  }
+  
+/* styling för footer*/
+footer {
+    background-color: lightgray;
+    color: black;
+    width: 100%;
+}
+.footerp {
+    padding-bottom: 1em;
+}
+.logofooter {
+    margin-top: 2em;
+    max-width: 280px;
+    margin: auto;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.footerh4 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-bottom: -0.5em;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+  .footerright {
+    font-family: 'Noto Sans JP', Sans-serif;
+    padding-bottom: 2em;
+}
+  .footerlink {
+     padding-top: 0.5em;
+    margin-left: -1em;
+     font-size: 1em;
+        }  
+}
+@media only screen and (max-width: 1000px) {
+/*boka resa för inloggad anv*/
+.bigbox {
+    border: solid 1px;
+    box-shadow: 5px 2px 2px lightgray;
+    padding: 0;
+    margin: auto;
+    max-width: 500px;
+    width: 90%;
+    margin-bottom: 1em;
+    padding: 0.5em;
+ }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+/* bilder med länkar på index */
+.column {
+    max-width: 480px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.imgfront {
+    max-width: 230px;
+    margin: auto;
+}
+
+}
+/* styling för stora skärmar */
+@media only screen and (min-width: 900px) {
+header {
+    padding: 0;
+    top: 0;
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0px 3px 5px #888;
+}
+/*grids i header*/
+.headergrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+.left {
+    margin-left: 7em;
+    padding-bottom: 1em;
+}
+.smalla {
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 300;
+   padding: 1em;
+}
+.menyul {
+    display: flex;
+  justify-content: center;
+}
+.meny {
+    display: inline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-left: 1em;
+   padding-right: 1em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+.menyhere {
+    display: inline;
+   text-decoration: underline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: #253C2A;
+}
+.smalla1 {
+  display: none;
+}
+.logo {
+    width: 250px;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+/* bilder med länkar på index */
+.column {
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+}
+.imgfront {
+    max-width: 230px;
+    margin: auto;
+}
+ /* styling på boka resa sida */
+ /* kolumner*/
+ .columnbooking {
+     max-width: 960px;
+     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+}
+.centerp {
+    max-width: 350px;
+    margin: auto;
+    padding: 1em;
+}
+.centerh3 {
+    margin-top: 3em;
+    text-align: center;
+}
+
+/* rubriker med grön bakgrund*/
+.greenh2 {
+    background-color: #D7F0DE;
+    text-align: center;
+    padding: 0.5em;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: solid 1px;
+}
+.greenlegend {
+    background-color: #D7F0DE;
+    text-align: center;
+   padding-top: 0.5em;
+   padding-bottom: 0.5em;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: solid 1px;
+    width: 100%;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/* articlar i columns */
+.leftarticle, .rightarticle {
+    border: solid 1px;
+    box-shadow: 2px 2px 2px lightgray;
+    padding: 0;
+}
+.bookingh3 {
+    margin-left: 0.8em;
+    margin-bottom: -0.5em;
+}
+.bookingh3right {
+    margin-left: 2em;
+    margin-bottom: -0.5em;
+    margin-top: -1em;
+}
+.contactlogo {
+    max-width: 25px;
+    margin-bottom: -1em;
+    padding: 0.5em;
+}
+.line {
+    border-bottom: 1px solid;
+    max-width: 400px;
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+label {
+    font-size: 1.2em;
+}
+/*infosida*/
+.infoheader {
+    max-width: 900px;
+    margin: auto;
+    display: block;
+    margin-bottom: 2em;
+}
+/*gömma länk på infosida */
+.faqdiv {
+   display: none; 
+}
+input[type=text], input[type=email], select, textarea {
+    width: 400px; 
+    padding: 12px; 
+    margin: auto;
+    box-sizing: border-box; 
+    resize: vertical;
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin: auto;
+    background-color: white;
+  }
+  .h1h1 {
+    text-align: center;
+    font-family: 'Noto Sans JP', Sans-serif; 
+    font-size: 1.8em;
+  }
+  /* Style the submit button with a specific background color etc */
+  input[type=submit], .sent {
+    background-color: #003302;
+    color: white;
+    font-family: 'Noto Sans JP', Sans-serif;
+    padding: 12px 20px;
+    border-radius: 4px;
+    width: 400px; 
+    cursor: pointer;
+    margin-bottom: 1em;
+    margin: auto;
+  }
+  .centerd {
+    max-width: 280px;
+    margin: auto;
+}
+  /* styling för footer*/
+footer {
+    background-color: lightgray;
+    color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footerp {
+    max-width: 680px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: -1em;
+   margin-left: -0.1em;
+}
+.logofooter {
+    margin-top: 2em;
+    max-width: 330px;
+    margin-left: -1em;
+}
+.footerh4 {
+    font-family: 'Noto Sans JP', Sans-serif;
+    margin-bottom: -0.5em;
+    font-size: 1.2em;
+}
+  .footerright {
+    margin-top: 8.5em;
+    float: right;
+    margin-left: 40%;
+}
+.footerlink {
+    padding-top: 0.5em;
+   margin-left: -2em;
+    font-size: 1.2em;
+       }
+  }
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .header1 {
+      margin-left: 65%;
+     margin-right: 2em;
+     }
+.menyul {
+    display: flex;
+  justify-content: center;
+}
+.meny {
+    display: inline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-left: 1em;
+   padding-right: 1em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+.menyhere {
+    display: inline;
+   text-decoration: underline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: #253C2A;
+}
+     .right {
+        float: right;
+        width: 100%;
+    }
+  .frontpageh1 {
+    text-align: center;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+  }
+  }
+  /* styling för formulär bokningssida */
+  @media only screen and (min-width: 1000px) {
+     /* boka resa för inloggad anv*/
+.bigbox {
+    border: solid 1px;
+    box-shadow: 5px 2px 2px lightgray;
+    padding: 0;
+    margin: auto;
+    max-width: 960px;
+    margin-bottom: 1em;
+ } 
+ .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 840px;
+    margin: auto;
+}
+/*bokningsformulärets alla delar*/
+.leftform {
+    float: left;
+    max-width: 400px;
+    margin-top: 1em;
+}
+.rightform {
+   float: right;
+   margin-top: 1em;
+   /*margin-top: -4.3em;*/
+   width: 400px;
+}
+.leftform1 {
+   float: left;
+   max-width: 350px;
+   margin-left: 4em;
+   margin-top: 1em;
+}
+.rightform1 {
+  float: right;
+  margin-left: -6em;
+ margin-right: 5em;
+  max-width: 350px;
+  margin-top: -2px;
+  margin-left: 1em;
+}
+.return {
+    margin-top: -3em;
+    margin-left: -1.3em;
+}
+.down {
+    margin-top: 5em;
+}
+.time {
+    margin-top: 4.2em;
+    margin-bottom: 2em;
+}
+.trip {
+    margin-top: 2em;
+}
+.trip2 {
+    margin-top: 2.5em;
+}
+  }
+  @media only screen and (min-width: 1200px) {
+  .header1 {
+    margin-left: 78%;
+   }
+.menyul {
+    display: flex;
+  justify-content: center;
+}
+.meny {
+    display: inline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-left: 1em;
+   padding-right: 1em;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+.menyhere {
+    display: inline;
+   text-decoration: underline;
+   font-size: 1.1em;
+   font-family: 'Noto Sans JP', Sans-serif;
+   font-weight: 400;
+   padding-top: 1em;
+   padding-left: 1em;
+   padding-right: 1em;
+   background-color: #253C2A;
+}
+  .frontpageh1 {
+    text-align: center;
+    font-family: 'Noto Sans JP', Sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+  }
+  .right {
+    float: right;
+    margin-left: 40%;
+}
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="sv">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boka resa | Vikens Färdtjänst</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- header med login och language -->
+            <div class="headertop">
+            <div class="header1"><a href="login.html" class="smalla"><img src="bilder/login.png" alt="Logga in användare" class="small-logo">Logga in</a>
+                <a href="#" class="smalla1">  <img src="bilder/search.png" alt="Sök på sidan" class="small-logo">Sök</a>
+                <a href="#" class="smalla"><img src="bilder/language.png" alt="Change language" class="small-logo">Language</a>  </div>
+           </div>
+           <!-- header med två kolumner, logga och sök-->
+            <div class="headergrid">
+                <div class="left">
+                    <a href="http://tildakallstrom.se/vikens">
+            <img src="bilder/logga.png" alt="Logga för färdtjänste" class="logo">
+            </a>
+        </div>
+        <div class="right">
+          <form class="searchformform" action="#">
+            <label for="search">Här kan du söka på webbplatsen</label><br>
+              <input type="text" placeholder="Sök..." name="search" id="search" class="searchform"> <button type="submit" class="search">Sök</button>
+            </form>
+        </div>
+      </div>
+      
+     <!-- meny -->
+     <nav class="navbar" aria-label="Huvudmeny">
+      <ul class="menyul">
+          <li class="meny"><a href="index.html">Hem</a></li>
+            <li class="menyhere"><a href="boka.html">Boka resa</a></li>
+            <li class="meny"><a href="info.html">Information</a></li>
+            <li class="meny"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="minasidor" onclick="window.location.href='minasidor.html'">Mina sidor</button>
+       </header>
+<div class="breadcrumbs"><a href="index.html">Hem</a> >> <a href="inlogboka.html">Boka resa</a> >></div>
+    <h1 class="h1h1">Boka resa med Vikens Färdtjänst</h1>
+    <div class="movediv">
+    <a class="move" href="minasidor.html">Bokade resor>></a>
+  </div>
+   <article class="bigbox">
+    <fieldset>
+     <legend class="greenlegend"><h2>Boka resa</h2></legend>
+    <div class="grids">
+        <div class="leftform"><!-- fyll i avresa och desination-->
+        <label for="avresa">Avresa:</label><br> <input type="text" name="avresa" id="avresa" autocomplete="on">
+    </div>
+        <div class="rightform">
+        <label for="destination">Destination:</label><br><input type="text" name="destination" id="destination" autocomplete="on">
+    </div>
+    </div>
+        <div class="grids">
+        <div class="leftform">
+          <!--fyll i datum och tid-->
+        <label for="datum">Datum:</label><br> <input type="date" name="datum" id="datum"></div>
+        <div class="rightform">
+        <label for="tid">Avresetid:</label><br><input type="time" name="tid" id="tid"></div>
+    </div>
+    <!--fyll i om medresenär ska med-->
+    <h3 class="centerh3">Medresenär</h3>
+        <div class="grids"> 
+          <div class="leftform">  
+    <label for="medresenar" class="medresenar">Medresenär (ej ledsagare):</label><br>
+    <input type="number" id="medresenar" name="medresenar" min="0" max="3">
+  </div> <div class="rightform">
+    <label for="barn">Resenärer under 16år & egna barn:</label> 
+    <input type="number" id="barn" name="barn" min="0" max="3">
+  </div>
+</div>
+<!--fyll i om återkommande resa-->
+<h3 class="centerh3">Återkommande resa</h3>
+<p class="centerp">Önskar du ha återkommande resor en dag i veckan, eller ett datum i månaden, fyller du i nedan. Annars lämna tomt.
+  <strong>Obs! Fyll endast i veckodag eller dag i månaden.</strong>
+</p>
+<div class="grids">
+    <div class="trip"><label for="weekday">Veckodag:</label><br>
+    <select name="weekday" id="weekday">
+        <option value="none">Ej återkommande</option>
+        <option value="mon">Måndag</option>
+        <option value="tue">Tisdag</option>
+        <option value="wed">Onsdag</option>
+        <option value="thu">Torsdag</option>
+        <option value="fri">Fredag</option>
+        <option value="sat">Lördag</option>
+        <option value="sun">Söndag</option>
+      </select> </div>
+      <div class="trip2">
+    <label for="monthday">Dag i månaden:</label>
+    <input type="number" id="monthday" name="monthday" min="1" max="31">
+</div>
+</div> 
+<!--fyll i om returresa-->
+  <h3 class="centerh3">Returresa</h3>
+<p class="centerp"> Önskar du returresa, fyll i nedan annars lämna tomt.</p><br>
+<div class="grids">
+  <div>
+   <label for="return">Datum för returresa:</label><br>
+   <input type="date" name="return" id="return">
+  </div>
+  <div>
+    <label for="timereturn" class="time">Tid för returresa:</label><br> 
+    <input type="time" name="timereturn" id="timereturn" class="time">
+  </div>
+</div>
+<!--meddelande-->
+<div class="centerd">
+  <h3 class="centerh3">Vill du lägga till något?</h3>
+<label for="message">Meddelande:</label><br><textarea rows="3" name="message" id="message" cols="10"></textarea>
+</div>
+<div class="center">
+<button class="loginbutton1" onclick="window.location.href='resabokad.html'">Boka resa</button>
+   </div>  
+  </fieldset>  
+</article> 
+<section class="loginsection">
+    <h3 class="loginh3">Kom ihåg att logga ut innan du stänger fönstret</h3>
+<!-- logga in knapp-->
+<button class="loginbutton" onclick="window.location.href='login.html'">Logga ut</button>
+</section>
+<footer>
+  <div class="left">
+    <a href="index.html">
+        <img src="bilder/logga.png" alt="Vikens Färdtjänsts Logga" class="logofooter">
+        </a>
+      <h4 class="footerh4">Kontakta oss:</h4>
+        <p class="footerp"> <a href="tel:0771134567"  class="links">0771134567</a><br>
+            <a href="mailto:fardtjanst@viken.nu" class="links">fardtjanst@viken.nu</a><br>
+        Postadress: Valdemarsviks kommun<br>
+    615 80 Valdemarsvik </p>
+  </div>
+  <div class="footerright">
+    <h4 class="footerh4">Mer information:</h4>
+      <ul>
+          <li class="footerlink">
+      <a href="personuppgifter.html" class="links">Så behandlas dina personuppgifter</a>
+    </li>
+    <li class="footerlink">
+      <a href="tillganglighet.html" class="links">Tillgänglighet på webbplatsen</a>
+    </li>
+     <li class="footerlink">
+      <a href="sitemap.html" class="links">Webbplatskarta</a>
+    </li>
+    </ul>
+  </div>
+  
+</footer>
+        
+    </body>
+    </html>

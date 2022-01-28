@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html lang="sv">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Information | Vikens Färdtjänst</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <!-- header med login och language -->
+            <div class="headertop">
+            <div class="header1"><a href="login.html" class="smalla"><img src="bilder/login.png" alt="Logga in användare" class="small-logo">Logga in</a>
+                <a href="#" class="smalla1">  <img src="bilder/search.png" alt="Sök på sidan" class="small-logo">Sök</a>
+                <a href="#" class="smalla"><img src="bilder/language.png" alt="Change language" class="small-logo">Language</a>  </div>
+           </div>
+           <!-- header med två kolumner, logga och sök-->
+            <div class="headergrid">
+                <div class="left">
+                    <a href="http://tildakallstrom.se/vikens">
+            <img src="bilder/logga.png" alt="Logga För färdtjänsten" class="logo">
+            </a>
+        </div>
+     
+            <div class="right">
+                <form class="searchformform" action="#">
+                    <label for="search">Här kan du söka på webbplatsen</label><br>
+                            <input type="text" placeholder="Sök..." name="search" id="search" class="searchform"> <button type="submit" class="search">Sök</button>
+                            
+                          </form>
+            </div>
+          </div>
+      
+     <!-- meny -->
+     <nav class="navbar" aria-label="Huvudmeny">
+        <ul class="menyul">
+            <li class="meny"><a href="index.html">Hem</a></li>
+            <li class="meny"><a href="boka.html">Boka resa</a></li>
+            <li class="menyhere"><a href="info.html">Information</a></li>
+            <li class="meny"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="minasidor" onclick="window.location.href='minasidor.html'">Mina sidor</button>
+
+      
+       </header>
+<div class="breadcrumbs"><a href="index.html">Hem</a> >> <a href="info.html">Information</a> >></div>
+
+    <h1 class="h1h1">Information</h1>
+    <img src="bilder/info.jpg" class="infoheader" alt="Informationssida för Vikens färdtjänst.">
+
+<div class="columnbooking">
+    <div class="faqdiv">
+    <p> <a href="#faq" class="faq">Klicka här för att komma till Vanliga frågor och svar</a></p>
+</div>
+   <article class="leftarticle">
+    
+   <h2>Vad är färdtjänst?</h2>
+       <h3 class="bookingh3">Färdtjänst</h3>
+       <p>
+           Den som har ett funktionshinder som är varaktigt mer än 3 månader och 
+           som medför svårigheter att ta sig fram och/eller att åka med allmänna kommunikationer kan 
+           vara berättigad till färdtjänst.
+        
+        </p>
+        <h3 class="bookingh3">Medhjälpare</h3>
+        <p>
+            Den som behöver hjälp med något när denne sitter i bilen,
+            eller under färden kan få rätt till att ha med sig en ledsagarepå färdtjänstresorna.
+            
+            Den som behöver hjälp när den kommer fram till sitt resmål, 
+            till exempel som stöd för att gå eller någon som 
+            skjutsar i rullstolen får alltid ta med sig 
+            en medresenär. Medresenären betalar samma avgift
+             för resan. Det ska jämställas med att man 
+            löser varsin biljett på en vanlig linjebuss.
+            
+           <p> <b>Egna barn under 16 år får åka med utan extra kostnad.</b></p>
+           <p>
+            
+            Chauffören kan hjälpa till med att bära enklare bagage 
+            till dörren. Chauffören är aldrig skyldig att bära flera 
+            matkassar eller bagageväskor som medför flera vändor.
+            
+    </p>
+    <h3 class="bookingh3">Bedömning</h3>
+    <p>
+        Behovet av färdtjänst bedöms utifrån funktionshinder. 
+        Var man bor eller avsaknad av allmänna kommunikationer 
+        är inte något som är avgörande för tillståndet.
+        
+        Utredning och bedömning utgår från Lag (1997:736) om 
+        färdtjänst.
+        </p>
+        
+   </article> 
+
+   <article class="rightarticle" id="faq">
+    <h2>Vanliga frågor och svar</h2>
+    <ul id="expander">
+        <li>
+            <!--Aria-expended måste ändras till true med JS när article blir synlig-->
+            <button class="readMore" id="button1" aria-expanded="false" aria-controls="sect1" onclick="myFunctionFour()">Vem kan åka med färdtjänst?
+                <span id="morefour"></span> <span id="myBtnfour">+ Läs mer</span><span id="dotsfour"></span></button>
+                 <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
+            <article class="textExpand" id="sect1" role="region" aria-live="assertive">
+                <h3 class="bookingh3">Färdtjänst</h3>
+                <p>Den som har ett giltigt färdtjänsttillstånd kan åka med färdtjänst.</p>
+            </article>
+        </li>
+        <li>
+            <button class="readMore" id="button2" aria-expanded="false" aria-controls="sect2" onclick="myFunctionThree()">Vem kan få färdtjänsttillstånd?
+            <span id="morethree"></span> <span id="myBtnthree">+ Läs mer</span><span id="dotsthree"></span></button>
+            <article class="textExpand" id="sect2" role="region" aria-live="assertive">
+                <h3 class="bookingh3">Tillstånd</h3>
+                <p>Den som har ett funktionshinder som är varaktigt mer än 3 månader kan få ett färdtjänsttillstånd utfärdat. Funktionshindret ska medföra att man har stora svårigheter att ta sig fram och/eller åka med allmänna kommunikationer.</p>
+            </article>
+        </li>
+        <li>
+            <button class="readMore" id="button3" aria-expanded="false" aria-controls="sect3" onclick="myFunctionTwo()">Får djur följa med på resan? 
+            <span id="moretwo"></span> <span id="myBtntwo">+ Läs mer</span><span id="dotstwo"></span></button>
+            <article class="textExpand" id="sect3" role="region" aria-live="assertive">
+                <h3 class="bookingh3">Djur</h3>
+                <p>Den som har rätt till assistanshund enligt sitt färdtjänsttillstånd får ta med sig hunden på färdtjänstresan, den som inte har det får inte ta med sitt djur.</p>
+            </article>
+        </li>
+        <li>
+            <button class="readMore" id="button4" aria-expanded="false" aria-controls="sect4" onclick="myFunctionOne()">Ska du besöka en grav? 
+            <span id="moreone"></span> <span id="myBtnone">+ Läs mer</span><span id="dotsone"></span></button>
+            <article class="textExpand" id="sect4" role="region" aria-live="assertive">
+                <h3 class="bookingh3">Besöka grav</h3>
+                <p>Om man ska besöka en grav kan chauffören vänta i 20minuter, då skriver man detta i meddelanderutan på bokningsformuläret.</p>
+            </article>
+        </li>
+        <li>
+            <button class="readMore" id="button5" aria-expanded="false" aria-controls="sect5" onclick="myFunction()">Vilken service ingår?  
+                <span id="more"></span> <span id="myBtn">+ Läs mer</span><span id="dots"></span>
+              </button>  
+            <article class="textExpand" id="sect5" role="region" aria-live="assertive">
+                <h3 class="bookingh3">Service</h3>
+                <p>Man får alltid hjälp att komma på färdtjänstbussen, samt att 
+                    säkra sin rullstol och sitt bagage.
+                    
+                    Chauffören kan hjälpa till med att bära enklare bagage 
+                    till dörren vid ankomst. Chauffören är aldrig skyldig att 
+                    bära flera matkassar eller bagageväskor som medför flera 
+                    vändor.
+                    </p>
+            </article>
+        </li>
+    </ul>
+    <ul>
+        <li class="centerlink">
+    <a href="personuppgifter.html" class="link">Så behandlas dina personuppgifter</a>
+  </li>
+  <li class="centerlink">
+    <a href="tillganglighet.html" class="link">Tillgänglighet på webbplatsen</a>
+  </li>
+  </ul>
+
+</article> 
+
+</div>
+    
+
+<section class="loginsection">
+    <h3 class="loginh3">Klicka på logga in för att komma till mina sidor</h3>
+<!-- logga in knapp-->
+<button class="loginbutton" onclick="window.location.href='login.html'">Logga in</button>
+</section>
+
+<footer>
+  <div class="left">
+    <a href="index.html">
+        <img src="bilder/logga.png" alt="Vikens Färdtjänst Logga" class="logofooter">
+        </a>
+      <h4 class="footerh4">Kontakta oss:</h4>
+        <p class="footerp"> <a href="tel:0771134567"  class="links">0771134567</a><br>
+            <a href="mailto:fardtjanst@viken.nu" class="links">fardtjanst@viken.nu</a><br>
+        Postadress: Valdemarsviks kommun<br>
+    615 80 Valdemarsvik </p>
+  </div>
+  
+  <div class="footerright">
+    <h4 class="footerh4">Mer information:</h4>
+      <ul>
+          <li class="footerlink">
+      <a href="personuppgifter.html" class="links">Så behandlas dina personuppgifter</a>
+    </li>
+    <li class="footerlink">
+      <a href="tillganglighet.html" class="links">Tillgänglighet på webbplatsen</a>
+    </li>
+     <li class="footerlink">
+      <a href="sitemap.html" class="links">Webbplatskarta</a>
+    </li>
+    </ul>
+  </div>
+  
+</footer>
+<script src="js/script.js"></script>  
+<script src="js/js.js"></script>   
+    </body>
+    </html>
