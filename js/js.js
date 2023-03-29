@@ -1,4 +1,3 @@
-// function för att ändra "läs mer" till "dölj" 
 function myFunction() {
     let dots = document.getElementById("dots");
     let moreText = document.getElementById("more");

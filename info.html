@@ -9,30 +9,24 @@
     </head>
     <body>
         <header>
-            <!-- header med login och language -->
             <div class="headertop">
             <div class="header1"><a href="login.html" class="smalla"><img src="bilder/login.png" alt="Logga in användare" class="small-logo">Logga in</a>
                 <a href="#" class="smalla1">  <img src="bilder/search.png" alt="Sök på sidan" class="small-logo">Sök</a>
                 <a href="#" class="smalla"><img src="bilder/language.png" alt="Change language" class="small-logo">Language</a>  </div>
            </div>
-           <!-- header med två kolumner, logga och sök-->
             <div class="headergrid">
                 <div class="left">
                     <a href="http://tildakallstrom.se/vikens">
             <img src="bilder/logga.png" alt="Logga För färdtjänsten" class="logo">
             </a>
         </div>
-     
             <div class="right">
                 <form class="searchformform" action="#">
                     <label for="search">Här kan du söka på webbplatsen</label><br>
-                            <input type="text" placeholder="Sök..." name="search" id="search" class="searchform"> <button type="submit" class="search">Sök</button>
-                            
+                            <input type="text" placeholder="Sök..." name="search" id="search" class="searchform"> <button type="submit" class="search">Sök</button>      
                           </form>
             </div>
           </div>
-      
-     <!-- meny -->
      <nav class="navbar" aria-label="Huvudmeny">
         <ul class="menyul">
             <li class="meny"><a href="index.html">Hem</a></li>
@@ -42,11 +36,8 @@
         </ul>
       </nav>
       <button class="minasidor" onclick="window.location.href='minasidor.html'">Mina sidor</button>
-
-      
        </header>
 <div class="breadcrumbs"><a href="index.html">Hem</a> >> <a href="info.html">Information</a> >></div>
-
     <h1 class="h1h1">Information</h1>
     <img src="bilder/info.jpg" class="infoheader" alt="Informationssida för Vikens färdtjänst.">
 
@@ -92,18 +83,15 @@
         
         Utredning och bedömning utgår från Lag (1997:736) om 
         färdtjänst.
-        </p>
-        
+        </p>    
    </article> 
 
    <article class="rightarticle" id="faq">
     <h2>Vanliga frågor och svar</h2>
     <ul id="expander">
         <li>
-            <!--Aria-expended måste ändras till true med JS när article blir synlig-->
             <button class="readMore" id="button1" aria-expanded="false" aria-controls="sect1" onclick="myFunctionFour()">Vem kan åka med färdtjänst?
                 <span id="morefour"></span> <span id="myBtnfour">+ Läs mer</span><span id="dotsfour"></span></button>
-                 <!--Här används aria-live=assertive, skärmläsaren kommer avbryta allt och läsa upp detta-->
             <article class="textExpand" id="sect1" role="region" aria-live="assertive">
                 <h3 class="bookingh3">Färdtjänst</h3>
                 <p>Den som har ett giltigt färdtjänsttillstånd kan åka med färdtjänst.</p>
@@ -141,7 +129,7 @@
                 <h3 class="bookingh3">Service</h3>
                 <p>Man får alltid hjälp att komma på färdtjänstbussen, samt att 
                     säkra sin rullstol och sitt bagage.
-                    
+    
                     Chauffören kan hjälpa till med att bära enklare bagage 
                     till dörren vid ankomst. Chauffören är aldrig skyldig att 
                     bära flera matkassar eller bagageväskor som medför flera 
@@ -158,15 +146,11 @@
     <a href="tillganglighet.html" class="link">Tillgänglighet på webbplatsen</a>
   </li>
   </ul>
-
 </article> 
-
 </div>
     
-
 <section class="loginsection">
     <h3 class="loginh3">Klicka på logga in för att komma till mina sidor</h3>
-<!-- logga in knapp-->
 <button class="loginbutton" onclick="window.location.href='login.html'">Logga in</button>
 </section>
 
@@ -181,7 +165,6 @@
         Postadress: Valdemarsviks kommun<br>
     615 80 Valdemarsvik </p>
   </div>
-  
   <div class="footerright">
     <h4 class="footerh4">Mer information:</h4>
       <ul>
@@ -196,7 +179,6 @@
     </li>
     </ul>
   </div>
-  
 </footer>
 <script src="js/script.js"></script>  
 <script src="js/js.js"></script>   
